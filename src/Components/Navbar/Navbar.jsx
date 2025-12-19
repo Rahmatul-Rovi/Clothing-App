@@ -8,30 +8,50 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-5 flex flex-wrap items-center justify-between gap-4">
         
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="p-2 border-2 border-black rounded-lg">
-             <Laptop size={32} strokeWidth={2.5} />
-          </div>
-          <div>
-            <h1 className="text-3xl font-serif font-bold leading-tight">E-Com Shop</h1>
-            <p className="text-xs text-gray-500 uppercase tracking-widest">Shopping Made Easy</p>
-          </div>
-        </div>
+       <div className="flex items-center gap-4 group cursor-pointer">
+  {/* Icon Container - Border ektu light kora hoyeche and hover effect deya hoyeche */}
+  <div className="p-2.5 border-2 border-orange-500 rounded-xl bg-orange-50 transition-all duration-300 group-hover:bg-orange-100 shadow-sm">
+     <Laptop size={32} strokeWidth={2.5} className="text-orange-600" />
+  </div>
+
+  {/* Text Section */}
+  <div className="flex flex-col">
+    <h1 className="text-3xl font-serif font-extrabold leading-none text-slate-900 tracking-tight">
+      E-Com <span className="text-orange-600">Shop</span>
+    </h1>
+    <div className="flex items-center gap-1.5 mt-1">
+       {/* Ekta chotto divider line tagline-er shamne */}
+       <span className="w-5 h-[1.5px] bg-orange-400"></span>
+       <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.15em]">
+         Shopping Made Easy
+       </p>
+    </div>
+  </div>
+</div>
 
         {/* Search Bar Area */}
-        <div className="flex flex-1 max-w-2xl border border-gray-300 h-11">
-          <select className="bg-gray-100 px-4 text-sm border-r border-gray-300 outline-none hidden md:block">
-            <option>All Categories</option>
-          </select>
-          <input 
-            type="text" 
-            placeholder="Search here..." 
-            className="flex-1 px-4 outline-none text-sm"
-          />
-          <button className="bg-black text-white px-5 flex items-center justify-center">
-            <Search size={20} />
-          </button>
-        </div>
+       <div className="flex flex-1 max-w-2xl items-center bg-white border-2 border-gray-100 rounded-full shadow-sm focus-within:border-orange-500 focus-within:ring-4 focus-within:ring-orange-100 transition-all duration-300 h-12 overflow-hidden">
+  
+  {/* Category Dropdown */}
+  <select className="bg-gray-50 px-6 text-sm font-medium text-gray-600 border-r border-gray-200 outline-none hidden md:block hover:bg-gray-100 cursor-pointer transition-colors">
+    <option>All Categories</option>
+    <option>Electronics</option>
+    <option>Fashion</option>
+  </select>
+
+  {/* Search Input */}
+  <input 
+    type="text" 
+    placeholder="Search for products..." 
+    className="flex-1 px-5 outline-none text-sm text-gray-700 placeholder:text-gray-400 bg-transparent"
+  />
+
+  {/* Search Button */}
+  <button className="bg-orange-500 hover:bg-orange-600 text-white px-7 h-full flex items-center justify-center transition-colors duration-200 group">
+    <Search size={20} className="group-hover:scale-110 transition-transform duration-200" />
+  </button>
+  
+</div>
 
         {/* Call Section */}
         <div className="flex items-center gap-3">
