@@ -9,7 +9,7 @@ const Navbar = () => {
     <header className="w-full bg-white ">
       {/* --- Top Header Section --- */}
       <div className="container mx-auto px-4 py-5 flex flex-wrap items-center justify-between gap-4">
-        
+
         {/* Logo */}
         <div className="flex items-center gap-4 group cursor-pointer">
           <div className="p-2.5 border-2 border-orange-500 rounded-xl bg-orange-50 transition-all duration-300 group-hover:bg-orange-100 shadow-sm">
@@ -38,9 +38,9 @@ const Navbar = () => {
             <option>Bags</option>
           </select>
 
-          <input 
-            type="text" 
-            placeholder="Search for products..." 
+          <input
+            type="text"
+            placeholder="Search for products..."
             className="flex-1 px-5 outline-none text-sm text-gray-700 placeholder:text-gray-400 bg-transparent"
           />
 
@@ -62,7 +62,7 @@ const Navbar = () => {
       {/* --- Navigation Links Section --- */}
       <div className="border-t border-gray-100 shadow-sm">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          
+
           <div className="flex items-center flex-1">
             {/* Categories Button */}
             <button className="bg-orange-500 text-white font-bold px-8 py-4 uppercase text-sm tracking-wider">

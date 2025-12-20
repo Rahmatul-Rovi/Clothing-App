@@ -7,7 +7,6 @@ const Mens = () => {
   const navigate = useNavigate();
 
 const handleBuyNow = (product) => {
-  // আপনার রাউট অনুযায়ী পাথাটি চেক করে নিন (/checkout নাকি /checkOut)
   navigate('/checkout', { state: { product } });
 };
 

@@ -1,5 +1,4 @@
 import React from 'react';
-// Assets Imports (আপনি যা দিয়েছেন)
 import jack from '../../assets/Jacked.webp';
 import boot from '../../assets/boot.webp';
 import sneakers from '../../assets/Sneakers.jpg';
@@ -9,10 +8,9 @@ import { useNavigate } from 'react-router-dom';
 
 const AllCollection = () => {
 
-   const navigate = useNavigate(); // ফাংশনের ভেতরে ডিক্লেয়ার করুন
+   const navigate = useNavigate(); 
 
   const handleBuyNow = (product) => {
-  // console.log-টা দিয়ে চেক করবেন ব্রাউজারের ইনস্পেক্টে ডাটা আসছে কি না
   console.log("Sending Product:", product); 
   navigate('/checkout', { state: { product } });
 };
@@ -24,7 +22,7 @@ const AllCollection = () => {
     // --- Womens Collection ---
     { id: 1, name: "Luxe Sneaks", price: "$65.00", tag: "New Arrival", img: sneakers, category: "Women" },
     { id: 2, name: "Chic Wool-Blend Cardigan", price: "$75.00", tag: "Best Seller", img: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&q=80", category: "Women" },
-    { id: 3, name: "Classic Pleated Skirt", price: "$50.00", tag: "Trending", img: borkha, category: "Women" },
+    { id: 3, name: "Classic Pleated Borkha", price: "$100.00", tag: "Trending", img: borkha, category: "Women" },
     { id: 4, name: "Rounded Executive Blazer", price: "$90.00", tag: "Premium", img: "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&q=80", category: "Women" },
     { id: 5, name: "Premium Leather Tote Bag", price: "$50.00", tag: "Luxury", img: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80", category: "Women" },
     { id: 6, name: "Premium Jacquard Scarf", price: "$80.00", tag: "New", img: jack, category: "Women" },

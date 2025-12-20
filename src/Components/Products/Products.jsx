@@ -5,7 +5,6 @@ import bag from '../../assets/bag.jpg';
 import { Link } from 'react-router-dom';
 
 const Products = () => {
-  // Ekhane apni apnar image gulo import kore bosaben
   const products = [
     { id: 1, title: "Fashion for Men", image: male }, // image path ekhane hobe
     { id: 2, title: "Women Collection", image: female },
@@ -34,7 +33,6 @@ const Products = () => {
               {/* Card Design */}
               <div className="group relative overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-2">
                 
-                {/* Image Placeholder - Height 400px deya hoyeche */}
                 <div className="w-full h-[400px] bg-gray-200 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
                   {product.image ? (
                     <img 

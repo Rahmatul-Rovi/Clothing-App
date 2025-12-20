@@ -10,7 +10,6 @@ const Womens = () => {
   const navigate = useNavigate();
 
 const handleBuyNow = (product) => {
-  // আপনার রাউট অনুযায়ী পাথাটি চেক করে নিন (/checkout নাকি /checkOut)
   navigate('/checkout', { state: { product } });
 };
 
@@ -31,8 +30,8 @@ const handleBuyNow = (product) => {
     },
     {
       id: 3,
-      name: "Classic Pleated Skirt",
-      price: "$50.00",
+      name: "Classic Pleated Borkha",
+      price: "$100.00",
       tag: "Trending",
       img: borkha
     },

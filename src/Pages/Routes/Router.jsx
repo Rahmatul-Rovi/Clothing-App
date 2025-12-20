@@ -7,10 +7,11 @@ import Products from '../../Components/Products/Products'
 import About from '../../Components/About/About'
 import Mens from '../../Components/Mens/Mens'
 import Womens from '../../Components/Womens/Womens'
-import { Contact } from 'lucide-react'
+//import { Contact } from 'lucide-react'
 import Pages from '../../Components/Pages/Pages'
 import AllCollection from '../../Components/AllCollection/AllCollection'
 import Checkout from '../../Components/CheckOut/CheckOut'
+import Contact from '../../Components/Contact/Contact'
 
 
 // Home page (Main + Products)
