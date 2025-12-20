@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, ShoppingCart, Laptop, Phone } from 'lucide-react'; // icons-er jonno (npm install lucide-react)
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -75,12 +76,12 @@ const Navbar = () => {
 
             {/* Nav Menu */}
             <nav className="hidden lg:flex items-center ml-10 space-x-8">
-              <a href="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">HOME</a>
-              <a href="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">PAGES</a>
-              <a href="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">ABOUT US</a>
-              <a href="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">MEN</a>
-              <a href="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">WOMEN</a>
-              <a href="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">CONTACT US</a>
+              <Link to="/" className="font-semibold text-gray-700 hover:text-orange-500 transition">HOME</Link>
+              <Link to="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">PAGES</Link>
+              <Link to="/about" className="font-semibold text-gray-700 hover:text-orange-500 transition">ABOUT US</Link>
+              <Link to="/men" className="font-semibold text-gray-700 hover:text-orange-500 transition">MEN</Link>
+              <Link to="/women" className="font-semibold text-gray-700 hover:text-orange-500 transition">WOMEN</Link>
+              <Link to="/contactUs" className="font-semibold text-gray-700 hover:text-orange-500 transition">CONTACT US</Link>
             </nav>
           </div>
 
