@@ -6,7 +6,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white">
+    <header className="w-full bg-white ">
       {/* --- Top Header Section --- */}
       <div className="container mx-auto px-4 py-5 flex flex-wrap items-center justify-between gap-4">
         

@@ -5,8 +5,20 @@ import boot from '../../assets/boot.webp';
 import sneakers from '../../assets/Sneakers.jpg';
 import borkha from '../../assets/Borkha.PNG';
 import business from '../../assets/Business.webp';
+import { useNavigate } from 'react-router-dom';
 
 const AllCollection = () => {
+
+   const navigate = useNavigate(); // ফাংশনের ভেতরে ডিক্লেয়ার করুন
+
+  const handleBuyNow = (product) => {
+  // console.log-টা দিয়ে চেক করবেন ব্রাউজারের ইনস্পেক্টে ডাটা আসছে কি না
+  console.log("Sending Product:", product); 
+  navigate('/checkout', { state: { product } });
+};
+
+
+
   // Combined Data: Male + Female Products
   const allProducts = [
     // --- Womens Collection ---
@@ -88,7 +100,7 @@ const AllCollection = () => {
                 <div className="mt-auto">
                   <p className="text-2xl font-black text-gray-900 mb-5">{product.price}</p>
                   
-                  <button className="w-full bg-gray-900 text-white py-3.5 rounded-2xl font-bold tracking-widest hover:bg-orange-600 transition-all duration-300 shadow-lg active:scale-95 uppercase text-xs">
+                  <button onClick={() => handleBuyNow(product)} className="w-full bg-gray-900 text-white py-3.5 rounded-2xl font-bold tracking-widest hover:bg-orange-600 transition-all duration-300 shadow-lg active:scale-95 uppercase text-xs">
                     Buy Now
                   </button>
                 </div>

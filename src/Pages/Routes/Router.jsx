@@ -10,6 +10,7 @@ import Womens from '../../Components/Womens/Womens'
 import { Contact } from 'lucide-react'
 import Pages from '../../Components/Pages/Pages'
 import AllCollection from '../../Components/AllCollection/AllCollection'
+import Checkout from '../../Components/CheckOut/CheckOut'
 
 
 // Home page (Main + Products)
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: '/allCollection',
         element: <AllCollection></AllCollection>
+      },
+      {
+      path: '/checkout',
+      element: <Checkout></Checkout>
       },
      
       {

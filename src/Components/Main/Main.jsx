@@ -3,13 +3,19 @@ import fron from '../../assets/front.PNG';
 import femal from '../../assets/female.PNG';
 import mal from '../../assets/male.PNG';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 function Main() {
+    // এনিমেশন সেটিংস (এক জায়গায় লিখে রাখলাম যাতে বারবার লিখতে না হয়)
+    const fadeInVariant = {
+        hidden: { opacity: 0, y: 50 }, // শুরুতে অদৃশ্য এবং নিচে থাকবে
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } // স্ক্রল করলে ভেসে উঠবে
+    };
     return (
         /* container bad diye shudhu w-full use kora hoyeche */
         <div>
             <main className="w-full">
-                <div className="w-full">
+                <div  className="w-full">
                     <img
                         src={fron}
                         alt="E-com Front Banner"
