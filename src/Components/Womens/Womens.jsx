@@ -1,13 +1,17 @@
 import React from 'react';
+import jack from '../../assets/Jacked.webp';
+import boot from '../../assets/boot.webp';
+import sneakers from '../../assets/Sneakers.jpg';
+import borkha from '../../assets/Borkha.PNG';
 
 const Womens = () => {
   const products = [
     {
       id: 1,
-      name: "Floral Summer Maxi Dress",
+      name: "Luxe Sneaks",
       price: "$65.00",
       tag: "New Arrival",
-      img: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80"
+      img: sneakers
     },
     {
       id: 2,
@@ -21,7 +25,7 @@ const Womens = () => {
       name: "Classic Pleated Skirt",
       price: "$50.00",
       tag: "Trending",
-      img: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80"
+      img: borkha
     },
     {
       id: 4,
@@ -39,17 +43,17 @@ const Womens = () => {
     },
     {
       id: 6,
-      name: "Classic White Silk Blouse",
+      name: "Premium Jacquard Scarf",
       price: "$80.00",
       tag: "New",
-      img: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&q=80"
+      img: jack
     },
     {
       id: 7,
       name: "Suede Ankle Boots",
       price: "$50.00",
       tag: "Limited",
-      img: "https://images.unsplash.com/photo-1608256246200-53e635b5b69f?auto=format&fit=crop&q=80"
+      img: boot
     },
     {
       id: 8,
