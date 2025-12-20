@@ -79,6 +79,7 @@ const Navbar = () => {
             <nav className="hidden lg:flex items-center ml-10 space-x-8">
               <Link to="/" className="font-semibold text-gray-700 hover:text-orange-500 transition">HOME</Link>
               <Link to="/pages" className="font-semibold text-gray-700 hover:text-orange-500 transition">PAGES</Link>
+              <Link to="/allCollection" className="font-semibold text-gray-700 hover:text-orange-500 transition">All Collection</Link>
               
               <Link to="/men" className="font-semibold text-gray-700 hover:text-orange-500 transition">MEN</Link>
               <Link to="/women" className="font-semibold text-gray-700 hover:text-orange-500 transition">WOMEN</Link>

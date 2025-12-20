@@ -2,6 +2,7 @@ import React from 'react';
 import male from '../../assets/malesection.jpg';
 import female from '../../assets/femalesection.jpeg';
 import bag from '../../assets/bag.jpg';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   // Ekhane apni apnar image gulo import kore bosaben
@@ -54,9 +55,9 @@ const Products = () => {
                   <h3 className="text-2xl font-bold text-white uppercase tracking-tighter">
                     {product.title}
                   </h3>
-                  <button className="mt-4 text-sm font-bold text-white border-b-2 border-orange-600 pb-1 hover:text-orange-500 transition-colors">
+                 <Link to="/allCollection"> <button className="mt-4 text-sm font-bold text-white border-b-2 border-orange-600 pb-1 hover:text-orange-500 transition-colors">
                     SHOP COLLECTION →
-                  </button>
+                  </button></Link>
                 </div>
 
               </div>

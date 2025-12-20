@@ -2,6 +2,7 @@ import React from 'react';
 import fron from '../../assets/front.PNG';
 import femal from '../../assets/female.PNG';
 import mal from '../../assets/male.PNG';
+import { Link } from 'react-router-dom';
 
 function Main() {
     return (
@@ -39,13 +40,13 @@ function Main() {
 
                     {/* Button Section */}
                     <div className="mt-10 flex flex-wrap gap-4">
-                        <button className="bg-slate-900 dark:bg-white text-white dark:text-black font-bold py-4 px-10 transition-all duration-300 uppercase tracking-widest text-sm hover:bg-orange-600 dark:hover:bg-orange-500 hover:scale-105 active:scale-95 shadow-xl">
+                       <Link to="/men"> <button className="bg-slate-900 dark:bg-white text-white dark:text-black font-bold py-4 px-10 transition-all duration-300 uppercase tracking-widest text-sm hover:bg-orange-600 dark:hover:bg-orange-500 hover:scale-105 active:scale-95 shadow-xl">
                             SHOP NOW
-                        </button>
+                        </button></Link>
 
-                        <button className="border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold py-4 px-10 transition-all duration-300 uppercase tracking-widest text-sm hover:bg-slate-100 dark:hover:bg-white/10">
+                        <Link to="/men"><button className="border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold py-4 px-10 transition-all duration-300 uppercase tracking-widest text-sm hover:bg-slate-100 dark:hover:bg-white/10">
                             VIEW LOOKBOOK
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
             </div>
@@ -95,22 +96,22 @@ function Main() {
                     {/* Buttons - Unique Modern Design */}
                     <div className="pt-4 flex flex-col sm:flex-row gap-6">
                         {/* Primary Button */}
-                        <button className="relative group overflow-hidden bg-slate-900 dark:bg-orange-600 text-white px-12 py-5 font-bold uppercase tracking-widest text-sm transition-all shadow-2xl hover:shadow-orange-500/20">
+                       <Link to="/women"> <button className="relative group overflow-hidden bg-slate-900 dark:bg-orange-600 text-white px-12 py-5 font-bold uppercase tracking-widest text-sm transition-all shadow-2xl hover:shadow-orange-500/20">
                             <span className="relative z-10">Explore Now</span>
                             <div className="absolute inset-0 bg-orange-600 dark:bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                             {/* Hover-e text color dark mode-e change hobe */}
                             <span className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white dark:text-black font-bold">
                                 Explore Now
                             </span>
-                        </button>
+                        </button></Link>
 
                         {/* Transparent Button with Underline effect */}
-                        <button className="group flex items-center gap-4 text-slate-900 dark:text-white font-bold uppercase tracking-widest text-sm">
+                       <Link to="/women"> <button className="group flex items-center gap-4 text-slate-900 dark:text-white font-bold uppercase tracking-widest text-sm">
                             <span>View Lookbook</span>
                             <div className="w-10 h-10 rounded-full border border-slate-900 dark:border-white flex items-center justify-center group-hover:bg-slate-900 dark:group-hover:bg-white group-hover:text-white dark:group-hover:text-black transition-all">
                                 →
                             </div>
-                        </button>
+                        </button></Link>
                     </div>
 
                 </div>
@@ -130,7 +131,6 @@ function Main() {
                 </div>
             </div>
 
-            {/* Product Section  */}
 
             
         </div>
