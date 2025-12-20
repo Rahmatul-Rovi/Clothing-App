@@ -1,7 +1,16 @@
 import React from 'react';
 import business from '../../assets/Business.webp'
+import { useNavigate } from 'react-router-dom';
 
 const Mens = () => {
+
+  const navigate = useNavigate();
+
+const handleBuyNow = (product) => {
+  // আপনার রাউট অনুযায়ী পাথাটি চেক করে নিন (/checkout নাকি /checkOut)
+  navigate('/checkout', { state: { product } });
+};
+
   const products = [
     { id: 1, name: "Premium Cotton T-Shirt", price: "$25.00", tag: "New", img: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80" },
     { id: 2, name: "Slim Fit Denim Jacket", price: "$85.00", tag: "Sale", img: "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?auto=format&fit=crop&q=80" },
@@ -37,7 +46,7 @@ const Mens = () => {
                 <h3 className="text-lg font-bold text-gray-800 truncate">{product.name}</h3>
                 <p className="text-orange-600 text-xl font-black mt-2">{product.price}</p>
                 <div className="mt-6">
-                  <button className="w-full bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-orange-600 transition-colors shadow-lg active:scale-95">
+                  <button onClick={() => handleBuyNow(product)} className="w-full bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-orange-600 transition-colors shadow-lg active:scale-95">
                     BUY NOW
                   </button>
                 </div>

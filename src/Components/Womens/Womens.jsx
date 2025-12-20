@@ -3,8 +3,17 @@ import jack from '../../assets/Jacked.webp';
 import boot from '../../assets/boot.webp';
 import sneakers from '../../assets/Sneakers.jpg';
 import borkha from '../../assets/Borkha.PNG';
+import { useNavigate } from 'react-router-dom';
 
 const Womens = () => {
+
+  const navigate = useNavigate();
+
+const handleBuyNow = (product) => {
+  // আপনার রাউট অনুযায়ী পাথাটি চেক করে নিন (/checkout নাকি /checkOut)
+  navigate('/checkout', { state: { product } });
+};
+
   const products = [
     {
       id: 1,
@@ -119,7 +128,7 @@ const Womens = () => {
                 </h3>
                 
                 {/* Shop Now Button */}
-                <button className="mt-6 w-full bg-gray-900 text-white py-3 rounded-xl font-bold tracking-wide hover:bg-orange-600 transition-all duration-300 shadow-lg active:scale-95 uppercase text-sm">
+                <button onClick={() => handleBuyNow(product)} className="mt-6 w-full bg-gray-900 text-white py-3 rounded-xl font-bold tracking-wide hover:bg-orange-600 transition-all duration-300 shadow-lg active:scale-95 uppercase text-sm">
                   Shop Now
                 </button>
               </div>

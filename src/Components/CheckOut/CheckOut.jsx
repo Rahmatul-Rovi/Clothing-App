@@ -41,7 +41,7 @@ const Checkout = () => {
             <label className="text-xs font-bold text-gray-600 uppercase ml-2">Full Name</label>
             <input 
                 type="text" 
-                placeholder="John Doe" 
+                placeholder="Enter your name" 
                 className="w-full p-4 bg-white border border-gray-200 rounded-2xl text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-orange-600 focus:border-transparent outline-none transition-all shadow-sm" 
             />
         </div>
@@ -49,7 +49,7 @@ const Checkout = () => {
             <label className="text-xs font-bold text-gray-600 uppercase ml-2">Email Address</label>
             <input 
                 type="email" 
-                placeholder="john@example.com" 
+                placeholder="Enter your email" 
                 className="w-full p-4 bg-white border border-gray-200 rounded-2xl text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-orange-600 focus:border-transparent outline-none transition-all shadow-sm" 
             />
         </div>
@@ -59,7 +59,7 @@ const Checkout = () => {
         <label className="text-xs font-bold text-gray-600 uppercase ml-2">Shipping Address</label>
         <textarea 
             rows="3" 
-            placeholder="Street 123, House 45, City" 
+            placeholder="Enter address" 
             className="w-full p-4 bg-white border border-gray-200 rounded-2xl text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-orange-600 focus:border-transparent outline-none transition-all shadow-sm"
         ></textarea>
     </div>
@@ -134,7 +134,7 @@ const Checkout = () => {
                     {/* Security Badge */}
                     <div className="mt-6 flex items-center justify-center gap-3 text-gray-400 text-sm font-medium">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                        Secure Checkout Powered by Stripe
+                        Secure Checkout Powered by E-Com Shop
                     </div>
                 </motion.div>
 
