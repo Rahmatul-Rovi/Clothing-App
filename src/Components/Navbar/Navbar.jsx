@@ -36,8 +36,9 @@ const Navbar = () => {
   {/* Category Dropdown */}
   <select className="bg-gray-50 px-6 text-sm font-medium text-gray-600 border-r border-gray-200 outline-none hidden md:block hover:bg-gray-100 cursor-pointer transition-colors">
     <option>All Categories</option>
-    <option>Electronics</option>
-    <option>Fashion</option>
+    <option>Mens</option>
+    <option>Womens</option>
+    <option>Bags</option>
   </select>
 
   {/* Search Input */}
@@ -77,10 +78,11 @@ const Navbar = () => {
             {/* Nav Menu */}
             <nav className="hidden lg:flex items-center ml-10 space-x-8">
               <Link to="/" className="font-semibold text-gray-700 hover:text-orange-500 transition">HOME</Link>
-              <Link to="#" className="font-semibold text-gray-700 hover:text-orange-500 transition">PAGES</Link>
-              <Link to="/about" className="font-semibold text-gray-700 hover:text-orange-500 transition">ABOUT US</Link>
+              <Link to="/pages" className="font-semibold text-gray-700 hover:text-orange-500 transition">PAGES</Link>
+              
               <Link to="/men" className="font-semibold text-gray-700 hover:text-orange-500 transition">MEN</Link>
               <Link to="/women" className="font-semibold text-gray-700 hover:text-orange-500 transition">WOMEN</Link>
+              <Link to="/about" className="font-semibold text-gray-700 hover:text-orange-500 transition">ABOUT US</Link>
               <Link to="/contactUs" className="font-semibold text-gray-700 hover:text-orange-500 transition">CONTACT US</Link>
             </nav>
           </div>

@@ -8,6 +8,8 @@ import About from '../../Components/About/About'
 import Mens from '../../Components/Mens/Mens'
 import Womens from '../../Components/Womens/Womens'
 import { Contact } from 'lucide-react'
+import Pages from '../../Components/Pages/Pages'
+
 
 // Home page (Main + Products)
 const Home = () => (
@@ -43,8 +45,15 @@ const router = createBrowserRouter([
         element: <Contact></Contact>
       },
       {
+        path: '/pages',
+        element: <Pages></Pages>
+      },
+     
+      {
         path: 'pages',
-        element: <div className="p-20 text-center">Pages are coming soon...</div>
+        element: <div className="p-20 text-center">
+          
+        </div>
       }
     ]
   }
