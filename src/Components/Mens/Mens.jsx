@@ -18,7 +18,7 @@ const handleBuyNow = (product) => {
   const products = [
     { id: 1, name: "Premium Cotton T-Shirt", price: "$25.00", tag: "New", img: Cotton },
     { id: 2, name: "Slim Fit Denim Jacket", price: "$85.00", tag: "Sale", img: Denim },
-    { id: 3, name: "Urban Street Hoodie", price: "$45.00", tag: "Best Seller", img: Hoodie },
+    { id: 3, name: "Urban Street Hoodie", price: "$70.00", tag: "Best Seller", img: Hoodie },
     { id: 4, name: "Classic Leather Watch", price: "$120.00", tag: "Luxury", img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80" },
     { id: 5, name: "Formal Business Suit", price: "$299.00", tag: "Premium", img: business },
     { id: 6, name: "Sporty Sneakers", price: "$65.00", tag: "Trending", img: sneakers },

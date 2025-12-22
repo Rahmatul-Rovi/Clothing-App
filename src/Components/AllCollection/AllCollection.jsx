@@ -4,6 +4,11 @@ import boot from '../../assets/boot.webp';
 import sneakers from '../../assets/Sneakers.jpg';
 import borkha from '../../assets/Borkha.PNG';
 import business from '../../assets/Business.webp';
+import Sneakers from '../../assets/Sneakers2.jpg';
+import Denim from '../../assets/denim.jpg';
+import Cotton from '../../assets/cotton.jpg';
+import Bag from '../../assets/6.webp';
+import Hoodie from '../../assets/hoodie.webp';
 import { useNavigate } from 'react-router-dom';
 
 const AllCollection = () => {
@@ -30,14 +35,14 @@ const AllCollection = () => {
     { id: 8, name: "Minimalist Gray Skirt", price: "$20.00", tag: "Sale", img: "https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?auto=format&fit=crop&q=80", category: "Women" },
 
     // --- Mens Collection ---
-    { id: 9, name: "Premium Cotton T-Shirt", price: "$25.00", tag: "New", img: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80", category: "Men" },
-    { id: 10, name: "Slim Fit Denim Jacket", price: "$85.00", tag: "Sale", img: "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?auto=format&fit=crop&q=80", category: "Men" },
-    { id: 11, name: "Urban Street Hoodie", price: "$45.00", tag: "Best Seller", img: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80", category: "Men" },
-    { id: 12, name: "Classic Leather Watch", price: "$120.00", tag: "Luxury", img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80", category: "Men" },
-    { id: 13, name: "Formal Business Suit", price: "$299.00", tag: "Premium", img: business, category: "Men" },
-    { id: 14, name: "Sporty Sneakers", price: "$65.00", tag: "Trending", img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80", category: "Men" },
-    { id: 15, name: "Casual Linen Shirt", price: "$35.00", tag: "Summer", img: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80", category: "Men" },
-    { id: 16, name: "Outdoor Adventure Bag", price: "$55.00", tag: "New", img: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&q=80", category: "Men" },
+     { id: 9, name: "Premium Cotton T-Shirt", price: "$25.00", tag: "New", img: Cotton },
+       { id: 10, name: "Slim Fit Denim Jacket", price: "$85.00", tag: "Sale", img: Denim },
+       { id: 11, name: "Urban Street Hoodie", price: "$70.00", tag: "Best Seller", img: Hoodie },
+       { id: 12, name: "Classic Leather Watch", price: "$120.00", tag: "Luxury", img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80" },
+       { id: 13, name: "Formal Business Suit", price: "$299.00", tag: "Premium", img: business },
+       { id: 14, name: "Sporty Sneakers", price: "$65.00", tag: "Trending", img: Sneakers },
+       { id: 15, name: "Casual Linen Shirt", price: "$35.00", tag: "Summer", img: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80" },
+       { id: 16, name: "Outdoor Adventure Bag", price: "$55.00", tag: "New", img: Bag },
   ];
 
   return (
